@@ -1,0 +1,297 @@
+.props[data-astro-cid-5wtxw5lu] {
+  border-top: 1px solid var(--line);
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 2rem 1.5rem;
+  margin: 2.5rem 0 0;
+  padding: 2rem 0 0;
+  list-style: none;
+  display: grid;
+}
+li[data-astro-cid-5wtxw5lu] {
+  align-content: start;
+  gap: 0.35rem;
+  display: grid;
+}
+svg[data-astro-cid-5wtxw5lu] {
+  fill: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  stroke: var(--rope);
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-bottom: 0.4rem;
+  transition: transform 0.4s;
+}
+li[data-astro-cid-5wtxw5lu]:hover svg[data-astro-cid-5wtxw5lu] {
+  transform: translateY(-3px) rotate(-3deg);
+}
+strong[data-astro-cid-5wtxw5lu] {
+  font: 600 1rem var(--sans);
+}
+span[data-astro-cid-5wtxw5lu] {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+@media (prefers-reduced-motion: reduce) {
+  li[data-astro-cid-5wtxw5lu]:hover svg[data-astro-cid-5wtxw5lu] {
+    transform: none;
+  }
+}
+.bodymap[data-astro-cid-vk6je62c] {
+  grid-template-columns: minmax(12rem, 20rem) 1fr;
+  align-items: start;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  margin-top: 2.5rem;
+  display: grid;
+}
+.bm-figure[data-astro-cid-vk6je62c] {
+  width: 100%;
+  position: relative;
+}
+svg[data-astro-cid-vk6je62c] {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+svg[data-astro-cid-vk6je62c] circle[data-astro-cid-vk6je62c],
+svg[data-astro-cid-vk6je62c] path[data-astro-cid-vk6je62c] {
+  fill: none;
+  stroke: var(--ink-soft);
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.55;
+}
+svg[data-astro-cid-vk6je62c] .spine[data-astro-cid-vk6je62c] {
+  stroke: var(--rope);
+  stroke-dasharray: 2 7;
+  stroke-width: 3px;
+  opacity: 0.9;
+}
+.dot[data-astro-cid-vk6je62c] {
+  background: var(--paper);
+  border: 1px solid var(--rope);
+  pointer-events: none;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  transition:
+    transform 0.35s,
+    background 0.35s;
+  position: absolute;
+}
+.dot[data-astro-cid-vk6je62c].on {
+  background: var(--rope);
+  transform: scale(1.7);
+}
+.dot[data-astro-cid-vk6je62c].on:after {
+  content: "";
+  border: 1px solid var(--rope);
+  opacity: 0;
+  border-radius: 50%;
+  animation: 2.4s ease-out infinite ping;
+  position: absolute;
+  inset: -9px;
+}
+@keyframes ping {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+.bm-list[data-astro-cid-vk6je62c] ul[data-astro-cid-vk6je62c] {
+  border-top: 1px solid var(--line);
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+.bm-list[data-astro-cid-vk6je62c] li[data-astro-cid-vk6je62c] {
+  border-bottom: 1px solid var(--line);
+}
+button[data-astro-cid-vk6je62c] {
+  text-align: left;
+  width: 100%;
+  font: 500 1.05rem var(--sans);
+  color: var(--ink);
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  min-height: 44px;
+  padding: 0.7rem 0 0.7rem 1.25rem;
+  position: relative;
+}
+button[data-astro-cid-vk6je62c]:before {
+  content: "";
+  background: var(--rope);
+  width: 0.6rem;
+  height: 1px;
+  transition: width 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+button[data-astro-cid-vk6je62c][aria-pressed="true"] {
+  font-weight: 600;
+}
+button[data-astro-cid-vk6je62c][aria-pressed="true"]:before,
+button[data-astro-cid-vk6je62c]:hover:before {
+  width: 1rem;
+  height: 2px;
+}
+.bm-text[data-astro-cid-vk6je62c] {
+  min-height: 5.5em;
+  max-width: var(--measure);
+  font-size: 1.15rem;
+}
+@media (width<=760px) {
+  .bodymap[data-astro-cid-vk6je62c] {
+    grid-template-columns: 1fr;
+  }
+  .bm-figure[data-astro-cid-vk6je62c] {
+    max-width: 14rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dot[data-astro-cid-vk6je62c],
+  button[data-astro-cid-vk6je62c]:before {
+    transition: none;
+  }
+  .dot[data-astro-cid-vk6je62c].on:after {
+    animation: none;
+  }
+}
+.rule[data-astro-cid-cvsdm3rb] {
+  margin: 3rem 0 0;
+  padding-bottom: 9rem;
+  position: relative;
+}
+.bar[data-astro-cid-cvsdm3rb] {
+  background: var(--line);
+  height: 1px;
+}
+.fill[data-astro-cid-cvsdm3rb] {
+  background: var(--rope);
+  transform-origin: 0;
+  width: 100%;
+  height: 3px;
+  margin-top: -1px;
+  transition: transform 2.2s cubic-bezier(0.3, 0.6, 0.2, 1);
+}
+.js .rule[data-astro-cid-cvsdm3rb]:not(.is-in) .fill[data-astro-cid-cvsdm3rb] {
+  transform: scaleX(0);
+}
+ol[data-astro-cid-cvsdm3rb] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li[data-astro-cid-cvsdm3rb] {
+  gap: 0.3rem;
+  width: 8.5rem;
+  padding-top: 1.4rem;
+  display: grid;
+  position: absolute;
+  top: 0;
+  transform: translate(-1rem);
+}
+li[data-astro-cid-cvsdm3rb].end {
+  text-align: right;
+  transform: translate(calc(1rem - 100%));
+}
+li[data-astro-cid-cvsdm3rb] i[data-astro-cid-cvsdm3rb] {
+  background: var(--paper);
+  border: 1px solid var(--rope);
+  border-radius: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: -0.4rem;
+  position: absolute;
+  top: -0.4rem;
+  left: 1rem;
+}
+li[data-astro-cid-cvsdm3rb].end i[data-astro-cid-cvsdm3rb] {
+  margin-left: 0;
+  margin-right: -0.4rem;
+  left: auto;
+  right: 1rem;
+}
+strong[data-astro-cid-cvsdm3rb] {
+  font: 600 0.95rem var(--sans);
+}
+li[data-astro-cid-cvsdm3rb] span[data-astro-cid-cvsdm3rb] {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+@media (width<=640px) {
+  .rule[data-astro-cid-cvsdm3rb] {
+    padding: 0 0 0 1.5rem;
+  }
+  .bar[data-astro-cid-cvsdm3rb] {
+    width: 1px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .fill[data-astro-cid-cvsdm3rb] {
+    transform-origin: top;
+    width: 3px;
+    height: 100%;
+    margin: 0 0 0 -1px;
+  }
+  .js
+    .rule[data-astro-cid-cvsdm3rb]:not(.is-in)
+    .fill[data-astro-cid-cvsdm3rb] {
+    transform: scaleY(0);
+  }
+  ol[data-astro-cid-cvsdm3rb] {
+    gap: 1.5rem;
+    display: grid;
+  }
+  li[data-astro-cid-cvsdm3rb],
+  li[data-astro-cid-cvsdm3rb].end {
+    text-align: left;
+    width: auto;
+    padding: 0;
+    position: relative;
+    top: auto;
+    transform: none;
+    left: auto !important;
+  }
+  li[data-astro-cid-cvsdm3rb] i[data-astro-cid-cvsdm3rb],
+  li[data-astro-cid-cvsdm3rb].end i[data-astro-cid-cvsdm3rb] {
+    margin: 0 0 0 -0.4rem;
+    top: 0.3rem;
+    left: -1.5rem;
+    right: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .js
+    .rule[data-astro-cid-cvsdm3rb]:not(.is-in)
+    .fill[data-astro-cid-cvsdm3rb] {
+    transform: none;
+  }
+  .fill[data-astro-cid-cvsdm3rb] {
+    transition: none;
+  }
+}
+.how-split[data-astro-cid-4227vtql] {
+  align-items: start;
+  margin-top: 1.5rem;
+}
+.how-split[data-astro-cid-4227vtql] .steps[data-astro-cid-4227vtql] {
+  margin-top: 0;
+}
+.expect-split[data-astro-cid-4227vtql] {
+  align-items: start;
+}

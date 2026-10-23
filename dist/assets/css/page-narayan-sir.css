@@ -1,0 +1,56 @@
+.lineage-line[data-astro-cid-erpymrev] {
+  gap: 1.75rem;
+  margin: 2rem 0 0;
+  padding: 0 0 0 1.75rem;
+  list-style: none;
+  display: grid;
+  position: relative;
+}
+.lineage-line[data-astro-cid-erpymrev]:before {
+  content: "";
+  background: var(--rope);
+  width: 1px;
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  left: 0.3rem;
+}
+li[data-astro-cid-erpymrev] {
+  grid-template-columns: 8rem 1fr;
+  align-items: baseline;
+  gap: 1rem;
+  display: grid;
+  position: relative;
+}
+li[data-astro-cid-erpymrev]:before {
+  content: "";
+  background: var(--paper);
+  border: 1px solid var(--rope);
+  border-radius: 50%;
+  width: 0.65rem;
+  height: 0.65rem;
+  position: absolute;
+  top: 0.55em;
+  left: -1.75rem;
+}
+li[data-astro-cid-erpymrev].narayan:before {
+  background: var(--rope);
+}
+.when[data-astro-cid-erpymrev] {
+  font-family: var(--sans);
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+li[data-astro-cid-erpymrev].narayan .when[data-astro-cid-erpymrev] {
+  color: var(--ink);
+  font-weight: 600;
+}
+li[data-astro-cid-erpymrev].narayan .who[data-astro-cid-erpymrev] {
+  font-size: 1.25rem;
+}
+@media (width<=640px) {
+  li[data-astro-cid-erpymrev] {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

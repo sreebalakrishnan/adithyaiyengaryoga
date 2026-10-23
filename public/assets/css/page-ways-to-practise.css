@@ -1,0 +1,65 @@
+.stages[data-astro-cid-x3t7qvpz] {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  position: relative;
+}
+.stages[data-astro-cid-x3t7qvpz]:before {
+  content: "";
+  background: var(--rope);
+  height: 1px;
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  right: 0;
+}
+li[data-astro-cid-x3t7qvpz] {
+  transition-delay: calc(var(--i) * 0.12s);
+  align-content: start;
+  gap: 0.35rem;
+  padding-top: 2.4rem;
+  display: grid;
+  position: relative;
+}
+.num[data-astro-cid-x3t7qvpz] {
+  background: var(--paper);
+  border: 1px solid var(--rope);
+  width: 1.6rem;
+  height: 1.6rem;
+  font: 500 0.8rem var(--sans);
+  border-radius: 50%;
+  place-items: center;
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+strong[data-astro-cid-x3t7qvpz] {
+  font: 600 1rem var(--sans);
+}
+li[data-astro-cid-x3t7qvpz] > span[data-astro-cid-x3t7qvpz]:last-child {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@media (width<=760px) {
+  .stages[data-astro-cid-x3t7qvpz] {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-left: 2.4rem;
+  }
+  .stages[data-astro-cid-x3t7qvpz]:before {
+    width: 1px;
+    height: auto;
+    inset: 0 auto 0 0.8rem;
+  }
+  li[data-astro-cid-x3t7qvpz] {
+    padding: 0;
+  }
+  .num[data-astro-cid-x3t7qvpz] {
+    left: -2.4rem;
+  }
+}
