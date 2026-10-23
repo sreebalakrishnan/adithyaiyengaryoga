@@ -66,5 +66,60 @@
   {
     "page": "teachings",
     "missing": "[One-line summary]"
+  },
+  {
+    "page": "/",
+    "rewrite": "“As a direct student of B.K.S. Iyengar Guruji, I carry the responsibility of preserving the authenticity of his teachings while making them accessible to modern practitioners.",
+    "note": "Shown as a quote 'In his words' but reads like a written mission statement. Confirm with Narayan Sir that he said this; if not, replace it with something he actually said, or remove the quote."
+  },
+  {
+    "page": "/",
+    "rewrite": "Steady breath. Full attention. No strain.",
+    "note": "The idea is the heart of his teaching (sthira sukham asanam) but the three-fragment form is a common AI pattern. Say it the way he says it in class."
+  },
+  {
+    "page": "/",
+    "rewrite": "Most exercise works from the outside in. This practice works from the inside out.",
+    "note": "Replace with Narayan Sir's own words from the interviews, translated plainly."
+  },
+  {
+    "page": "/",
+    "rewrite": "The aim is not how the body looks, but how it functions",
+    "note": "Replace with Narayan Sir's own words from the interviews, translated plainly."
+  },
+  {
+    "page": "/",
+    "rewrite": "It cannot be rushed, and it does not need to be.",
+    "note": "Replace with Narayan Sir's own words from the interviews, translated plainly."
+  },
+  {
+    "page": "/",
+    "rewrite": "A teaching passed from hand to hand",
+    "note": "Heading. Aphoristic; consider plain words, e.g. what students call the lineage."
+  },
+  {
+    "page": "practice",
+    "rewrite": "This is not a quick fix, and it does not pretend to be.",
+    "note": "Replace with Narayan Sir's own words from the interviews, translated plainly."
+  },
+  {
+    "page": "practice",
+    "rewrite": "Come to learn, not to perform.",
+    "note": "Replace with Narayan Sir's own words from the interviews, translated plainly."
+  },
+  {
+    "page": "practice",
+    "rewrite": "A rope has three strands",
+    "note": "Heading. Metaphor heading; plain 'Asana, pranayama and meditation together' may serve beginners better."
+  },
+  {
+    "page": "ways-to-practise",
+    "rewrite": "Taught as part of the whole method, not as a separate technique.",
+    "note": "Replace with Narayan Sir's own words from the interviews, translated plainly."
+  },
+  {
+    "page": "ways-to-practise",
+    "rewrite": "Steady, sustainable, and without extremes.",
+    "note": "Three-part slogan. Replace with what weight management actually looks like in his class, once he confirms the class runs."
   }
 ]

@@ -26,7 +26,7 @@ Open http://127.0.0.1:8765. Serve the directory rather than double-clicking HTML
 - `public/assets/css/refinements.css`: shared visual changes and mobile layout.
 - `public/assets/css/page-*.css`: recovered page-specific styles.
 - `public/_astro/`: original optimized images and component styles. Scoped attributes are intentionally preserved so those styles remain functional.
-- `editorial-backlog.json`: unfinished content removed from public pages. Keep this outside the deployed directory.
+- `editorial-backlog.json`: unfinished content removed from public pages (`missing`), and lines that should be rewritten in Narayan Sir's or Yogen's own words (`rewrite`). Keep this outside the deployed directory.
 - `dist/`: deployable output, regenerated with `python3 build.py`.
 
 The original site's claims and contact information are retained, not independently fact-checked. Class offerings were marked unconfirmed in the source, so the refactor includes an explicit instruction to confirm current availability with the institute.

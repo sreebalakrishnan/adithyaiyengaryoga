@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.2.1 | 2026-10-23 | **Staging:** https://adithyaiyengaryoga.sreeb.dev — deploys itself from `main`, not indexed |
+| 1.3.0 | 2026-10-23 | **Staging:** https://adithyaiyengaryoga.sreeb.dev — deploys itself from `main`, not indexed |
+| 1.2.1 | 2026-10-23 | Tag `v1.2.1` |
 | 1.2.0 | 2026-10-23 | Tag `v1.2.0` |
 | 1.1.0 | 2026-10-23 | Tag `v1.1.0` |
 | 1.0.0 | 2026-10-23 | This repository, tag `v1.0.0` (first commit) |
@@ -20,6 +21,19 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.3.0 — 2026-10-23
+
+Less "AI-designed". Tag `v1.3.0`. Prompted by a design review of AI-built sites: the look and behaviour fixes are done here; the copy has to come from Narayan Sir and Yogen.
+
+### Changed
+- **Hero stat row replaced with one plain line:** "Classes Monday to Friday · 6–10 am and 4–8 pm". The row of big numbers ("1988 / 6–10 / 4–8" with small captions) was hard to read and is a common AI landing-page pattern; the founding year is already in the line above the heading.
+- **The outside-in / inside-out diagram shows both directions side by side** (stacked on phones) instead of hiding one behind a toggle. People rarely click the second button, so half the point was going unseen. On the home page the diagram now has two-thirds of the row, with the breathing ring beside it on wide screens and below it otherwise.
+- **Small spaced capitals are kept only for the line above the home heading.** The class-time labels ("Morning practice", "Evening practice", "Class days") are now in ordinary sentence case.
+- The toggle's script is removed from `site.js`.
+
+### Added
+- **Eleven lines to rewrite** in `editorial-backlog.json` (entries with a `rewrite` field), each with its page and a note. They follow the "not X, but Y" and three-fragment patterns that read as AI-written. First among them: the "In his words" quote on the home page, which needs Narayan Sir to confirm he said it.
 
 ## 1.2.1 — 2026-10-23
 

@@ -51,17 +51,6 @@ for (const gallery of document.querySelectorAll("[data-slides]")) {
     caption.setAttribute("aria-hidden", String(index !== 0)),
   );
 }
-for (const diagram of document.querySelectorAll("[data-inside-out]")) {
-  const buttons = [...diagram.querySelectorAll("[data-set]")];
-  buttons.forEach((button) =>
-    button.addEventListener("click", () => {
-      diagram.dataset.mode = button.dataset.set;
-      buttons.forEach((item) =>
-        item.setAttribute("aria-pressed", String(item === button)),
-      );
-    }),
-  );
-}
 for (const building of document.querySelectorAll("[data-building]")) {
   const columns = [...building.querySelectorAll("g.col")];
   building.querySelectorAll(".limb-list li").forEach((item, index) => {
