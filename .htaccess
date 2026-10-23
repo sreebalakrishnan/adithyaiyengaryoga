@@ -1,0 +1,14 @@
+# Hostinger deploys this repository as the document root. Serve the built site
+# from dist/ and keep src/, build.py and the editorial backlog off the web.
+RewriteEngine On
+
+# Already inside dist/ (including the internal re-run after a rewrite): stop.
+RewriteRule ^dist/ - [L]
+
+# Page URLs end with a slash. Redirect /visit to /visit/ here, before the
+# directory handler would do it and expose /dist/ in the address bar.
+RewriteCond %{DOCUMENT_ROOT}/dist/$1 -d
+RewriteRule ^(.+[^/])$ /$1/ [R=301,L]
+
+# Everything else is served from the built site.
+RewriteRule ^(.*)$ dist/$1 [L]
