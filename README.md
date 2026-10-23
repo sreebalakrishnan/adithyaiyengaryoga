@@ -3,6 +3,8 @@
 Recovered from https://adithyaiyengaryoga-website.yogs313.workers.dev on 23 October 2026.
 This is an editable static reconstruction of the browser-delivered website, not the original Astro source or Cloudflare Worker server code. All eight public pages, responsive images and invocation audio are included. Google Fonts remains an external dependency with local system-font fallbacks.
 
+What changed in each version, and where each one lives, is in [CHANGELOG.md](CHANGELOG.md).
+
 ## Run locally
 
 Requires Python 3, no packages required:
