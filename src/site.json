@@ -1,0 +1,28 @@
+{
+  "name": "Adithya Institute of Iyengar Yoga",
+  "alternateName": ["Aditya Institute of Iyengar Yoga", "Adithya Iyengar Yoga"],
+  "description": "Iyengar yoga school in Vijayanagar, Bengaluru, taught by Narayan Sir, a direct student of B.K.S. Iyengar, since 1988. A slow, precise practice with props, steady breath and no strain.",
+  "foundingDate": "1988",
+  "telephone": "+91 98456 15277",
+  "email": "adityaiyoga@gmail.com",
+  "address": {
+    "streetAddress": "#37/4/24, Prashanth Nagar, I Main Road (Thimmenahalli)",
+    "addressLocality": "Vijayanagar, Bengaluru",
+    "addressRegion": "Karnataka",
+    "postalCode": "560040",
+    "addressCountry": "IN"
+  },
+  "geo": { "latitude": 12.9755273, "longitude": 77.5330884 },
+  "map": "https://maps.app.goo.gl/G2W5rmQw3kvCNjBH7",
+  "hours": [
+    { "opens": "06:00", "closes": "10:00" },
+    { "opens": "16:00", "closes": "20:00" }
+  ],
+  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "teacher": {
+    "name": "Narayan Sir",
+    "description": "A direct student of B.K.S. Iyengar, teaching Iyengar yoga in Vijayanagar, Bengaluru since 1988. He teaches in Kannada and Tamil.",
+    "knowsLanguage": ["kn", "ta"],
+    "image": "/_astro/narayan-sir-headshot.Ww1T-jEP_Zr8uIp.webp"
+  }
+}

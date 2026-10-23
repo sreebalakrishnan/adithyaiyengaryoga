@@ -1,6 +1,7 @@
 # Hostinger deploys this repository as the document root. Serve the built site
 # from dist/ and keep src/, build.py and the editorial backlog off the web.
 RewriteEngine On
+ErrorDocument 404 /404.html
 
 # Already inside dist/ (including the internal re-run after a rewrite): stop.
 RewriteRule ^dist/ - [L]

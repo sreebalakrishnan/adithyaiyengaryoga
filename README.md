@@ -19,7 +19,9 @@ Open http://127.0.0.1:8765. Serve the directory rather than double-clicking HTML
 ## Edit
 
 - `src/pages/*.html`: readable page content. A page whose name starts with `_` (currently `_teachings.html`) is a draft: kept in source, left out of the build and sitemap.
-- `src/partials/header.html` and `footer.html`: shared navigation and contact details.
+- `src/partials/header.html` and `footer.html`: shared navigation and contact details. `head.html`: shared share-preview tags and the structured data slot.
+- `src/site.json`: facts about the institute (address, phone, hours, teacher). `build.py` turns them into structured data on every page and into `llms.txt`.
+- `src/pages/404.html`: the page shown for a missing URL (wired in `.htaccess`).
 - `public/assets/js/site.js`: named, readable enhancement logic for navigation, galleries, glossary and diagrams.
 - `public/assets/css/refinements.css`: shared visual changes and mobile layout.
 - `public/assets/css/page-*.css`: recovered page-specific styles.
