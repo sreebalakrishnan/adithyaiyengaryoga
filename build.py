@@ -10,7 +10,7 @@ if not SITE_URL.startswith(('https://', 'http://')):
 shutil.copytree(ROOT / 'public', DIST, dirs_exist_ok=True)
 partials = {name.upper(): (ROOT / 'src' / 'partials' / f'{name}.html').read_text() for name in ('header', 'footer')}
 routes = []
-for page in sorted((ROOT / 'src' / 'pages').glob('*.html')):
+for page in sorted((ROOT / 'src' / 'pages').glob('[!_]*.html')):  # _draft.html pages are not built
     route = '' if page.stem == 'home' else page.stem + '/'
     html = page.read_text()
     for name, value in partials.items():

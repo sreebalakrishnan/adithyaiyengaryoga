@@ -16,7 +16,7 @@ Open http://127.0.0.1:8765. Serve the directory rather than double-clicking HTML
 
 ## Edit
 
-- `src/pages/*.html`: readable page content.
+- `src/pages/*.html`: readable page content. A page whose name starts with `_` (currently `_teachings.html`) is a draft: kept in source, left out of the build and sitemap.
 - `src/partials/header.html` and `footer.html`: shared navigation and contact details.
 - `public/assets/js/site.js`: named, readable enhancement logic for navigation, galleries, glossary and diagrams.
 - `public/assets/css/refinements.css`: shared visual changes and mobile layout.
