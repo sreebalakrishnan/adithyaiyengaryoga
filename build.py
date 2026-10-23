@@ -4,9 +4,13 @@ import json, os, re, shutil
 from html import escape, unescape
 ROOT = Path(__file__).resolve().parent
 DIST = ROOT / 'dist'
-SITE_URL = os.environ.get('SITE_URL', 'https://adithyaiyengaryoga-website.yogs313.workers.dev').rstrip('/')
+# The site's permanent address, e.g. 'https://example.org'. Until it is set, the site is built for the staging
+# address: links and share images point there so they work, and every page asks search engines not to index it.
+FINAL_URL = None
+SITE_URL = (os.environ.get('SITE_URL') or FINAL_URL or 'https://adithyaiyengaryoga.sreeb.dev').rstrip('/')
 if not SITE_URL.startswith(('https://', 'http://')):
     raise ValueError('SITE_URL must be an absolute HTTP(S) URL')
+INDEXABLE = FINAL_URL is not None and SITE_URL == FINAL_URL.rstrip('/')
 SITE = json.loads((ROOT / 'src' / 'site.json').read_text())  # facts about the institute, used for structured data and llms.txt
 PAGE_TYPES = {'narayan-sir': 'ProfilePage', 'practice': 'FAQPage', 'visit': 'ContactPage'}  # schema.org type; others are WebPage
 
@@ -66,7 +70,7 @@ for page in sorted((ROOT / 'src' / 'pages').glob('[!_]*.html'), key=lambda page:
     html = page.read_text()
     for name, value in partials.items():
         html = html.replace('{{' + name + '}}', value)
-    html = html.replace('{{SITE_URL}}', escape(SITE_URL, quote=True))
+    html = html.replace('{{SITE_URL}}', escape(SITE_URL, quote=True)).replace('    {{ROBOTS}}\n', '' if INDEXABLE else '    <meta content="noindex" name="robots" />\n')
     if page.stem == '404':  # served by .htaccess for any missing URL; not in the sitemap
         (DIST / '404.html').write_text(html)
         continue
@@ -77,7 +81,7 @@ for page in sorted((ROOT / 'src' / 'pages').glob('[!_]*.html'), key=lambda page:
     target.write_text(html)
     pages.append((url, text(re.search(r'<title>(.*?)</title>', html, re.S).group(1)), meta(html, 'name', 'description')))
 (DIST / 'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join('<url><loc>' + escape(url) + '</loc></url>\n' for url, _, _ in pages) + '</urlset>\n')
-(DIST / 'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: ' + SITE_URL + '/sitemap.xml\n')
+(DIST / 'robots.txt').write_text('User-agent: *\nAllow: /\n' + ('Sitemap: ' + SITE_URL + '/sitemap.xml\n' if INDEXABLE else ''))  # crawlers must reach pages to see noindex
 address = SITE['address']
 (DIST / 'llms.txt').write_text('\n'.join([  # a plain summary for AI assistants and answer engines, see llmstxt.org
     f"# {SITE['name']}", '', f"> {SITE['description']}", '',
@@ -88,4 +92,4 @@ address = SITE['address']
     f"- Phone: {SITE['telephone']}. Email: {SITE['email']}",
     f"- Also known as: {', '.join(SITE['alternateName'])}.",
     '', '## Pages', ''] + [f'- [{title}]({url}): {description}' for url, title, description in pages]) + '\n')
-print(f'Built {len(pages)} pages in {DIST}')
+print(f'Built {len(pages)} pages in {DIST} for {SITE_URL}' + ('' if INDEXABLE else ' (staging: not indexed)'))

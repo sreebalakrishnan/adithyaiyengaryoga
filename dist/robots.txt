@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://adithyaiyengaryoga-website.yogs313.workers.dev/sitemap.xml

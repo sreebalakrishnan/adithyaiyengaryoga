@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.2.0 | 2026-10-23 | **Staging:** https://adithyaiyengaryoga.sreeb.dev — deploys itself from `main` |
+| 1.2.1 | 2026-10-23 | **Staging:** https://adithyaiyengaryoga.sreeb.dev — deploys itself from `main`, not indexed |
+| 1.2.0 | 2026-10-23 | Tag `v1.2.0` |
 | 1.1.0 | 2026-10-23 | Tag `v1.1.0` |
 | 1.0.0 | 2026-10-23 | This repository, tag `v1.0.0` (first commit) |
 | 0.1 | before 2026-10-23 | **Yogen's original:** https://adithyaiyengaryoga-website.yogs313.workers.dev — Astro on a Cloudflare Worker; its source is not in this repository |
@@ -19,6 +20,17 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.2.1 — 2026-10-23
+
+The permanent address is not chosen yet, so the site is now built for staging. Tag `v1.2.1`.
+
+### Fixed
+- **Share previews were blank.** Share images and other absolute links pointed at the workers.dev site, where `/og/hall.jpg` and `/og/lineage.jpg` do not exist. They now point at the staging address.
+
+### Changed
+- **Staging is not indexed.** Every page carries `noindex`, `robots.txt` no longer lists the sitemap, and nothing points search engines at workers.dev any more. Crawlers can still reach the pages, which is how they see the `noindex`.
+- `build.py` has a `FINAL_URL` setting, empty for now. Setting it makes the site indexable at that address; see "Deploy" in the README.
 
 ## 1.2.0 — 2026-10-23
 
@@ -54,7 +66,7 @@ Fixes and hosting. Tag `v1.1.0`.
 - This changelog.
 
 ### Not changed
-- Canonical and sitemap URLs still point at the workers.dev original (`SITE_URL` in `build.py`), so search engines do not treat the staging copy as a duplicate. Change `SITE_URL` when this becomes the real address.
+- Canonical and sitemap URLs still pointed at the workers.dev original. Replaced in 1.2.1 by staging mode.
 
 ## 1.0.0 — 2026-10-23
 

@@ -44,12 +44,17 @@ The original site's claims and contact information are retained, not independent
 
 ## Deploy to your existing host
 
-Only upload the contents of `dist/`. The live Worker has not been modified.
-For a different production domain, set it at build time:
+The staging copy runs at https://adithyaiyengaryoga.sreeb.dev and deploys itself from `main`; the root `.htaccess` serves `dist/`.
 
-```sh
-SITE_URL=https://your-domain.example python3 build.py
+**Until the permanent address is chosen, the site is built for staging:** every link and share image points at the staging address so they work, and every page carries `noindex` so search engines do not index a temporary URL. When the permanent address is ready, set it once in `build.py`:
+
+```python
+FINAL_URL = 'https://your-domain.example'
 ```
+
+then rebuild, commit and push. That removes `noindex`, puts the address in canonical links, structured data, the sitemap and `llms.txt`, and adds the sitemap to `robots.txt`. Redirect the staging address to it, and submit the sitemap in Google Search Console. `SITE_URL=… python3 build.py` still overrides the address for a one-off build, but only `FINAL_URL` makes the site indexable.
+
+The live Worker at workers.dev has not been modified.
 
 Use your existing Cloudflare deployment workflow to serve `dist/` as static assets. If the Worker has private routes or server features, merge these assets into the original project rather than replacing that server blindly. The original Astro component source cannot be reconstructed exactly from the served HTML.
 
@@ -59,7 +64,7 @@ Use your existing Cloudflare deployment workflow to serve `dist/` as static asse
 2. Replace the unfinished story material with interviews approved by Narayan Sir, and genuine student testimonials with permission.
 3. Publish short, reviewed teaching excerpts in Kannada/Tamil with English translations and captions.
 4. Add an enquiry or booking form once the recipient and handling process are chosen. Current call/email links already work without a backend.
-5. Connect the intended custom domain and update SITE_URL when ready.
+5. Connect the intended custom domain and set `FINAL_URL` in `build.py` when ready.
 
 ## Verification
 
