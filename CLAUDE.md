@@ -14,6 +14,7 @@ The practice as he teaches it: works from the inside out, on the internal organs
 
 - Timeline, as Yogen gave it: began learning from Sri B. Raghavendra Shenoy in **1987**; began teaching in **1989** at the Rashtrothana Parishad; started the Vijayanagar studio in **2002**. **Not 1988**: an earlier brief said "taught in Vijayanagar since 1988" and that was wrong. Say "teaching since 1989, and in Vijayanagar since 2002". Address: #37/4/24, Prashanth Nagar, I Main Road (Thimmenahalli), Vijayanagar, Bengaluru 560040. Map: https://maps.app.goo.gl/G2W5rmQw3kvCNjBH7
 - Classes: Monday to Friday, mornings 6–10 am, evenings 4–8 pm.
+- Students (Yogen): the youngest is 25 and the oldest is over 75. There is no children's or teens' class, so don't promise one.
 - Languages (Yogen): he speaks Kannada, Tamil, Telugu, English and Hindi; students are multilingual and language is not a barrier.
 - Email adityaiyoga@gmail.com (the real address; never "correct" its spelling). Phone +91 98456 15277, which matches his entry in the Pune institute's teacher directory.
 - Spelling is **Adithya**. "Aditya" appears only in the email address and as a recorded alternate name for search.
