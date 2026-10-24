@@ -1,12 +1,12 @@
 Adithya Institute of Iyengar Yoga: website
-Version 1.4.7, released 2026-10-24
+Version 1.4.8, released 2026-10-24
 Built for https://adithyaiyengaryoga.sreeb.dev (staging, not indexed by search engines)
 
-What changed in 1.4.7:
+What changed in 1.4.8:
 
-Tag `v1.4.7`. From Yogen.
+Tag `v1.4.8`. From Yogen, from his own observation of students.
 
-### Removed
-- **The sentence after "who comes to him" on the Narayan Sir page:** "The practice works alongside medical care and does not replace it: decisions about treatment stay between each person and their doctor." The medical-care notes on the practice page and on Ways to practise are unchanged.
+### Added
+- **One sentence on the Narayan Sir page, after who comes to him:** "Over the years, students with long-standing conditions have seen improvement with this practice, alongside their medical care." It is worded as improvement seen over the years, not as a cure, and does not compare the practice with other treatment. Students' own words, with their written consent, would say more and are still wanted.
 
 Every version: https://github.com/sreebalakrishnan/adithyaiyengaryoga/blob/main/CHANGELOG.md
