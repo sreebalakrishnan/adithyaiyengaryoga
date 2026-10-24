@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.4.9 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.10 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.9 | 2026-10-24 | Tag `v1.4.9` |
 | 1.4.8 | 2026-10-24 | Tag `v1.4.8` |
 | 1.4.7 | 2026-10-24 | Tag `v1.4.7` |
 | 1.4.6 | 2026-10-24 | Tag `v1.4.6` |
@@ -33,6 +34,13 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.4.10 — 2026-10-24
+
+Tag `v1.4.10`. From Yogen's report that the third banner picture still looked cut off on his phone.
+
+### Fixed
+- **Visitors kept seeing old styles for up to a week.** The host lets browsers keep stylesheets and scripts for seven days, and their addresses never changed, so anyone who had already loaded the site missed the 1.4.9 banner fix. `build.py` now adds the version to those addresses (`refinements.css?v=1.4.10`), so each release is fetched fresh. Release notes for 1.4.9 stay below.
 
 ## 1.4.9 — 2026-10-24
 

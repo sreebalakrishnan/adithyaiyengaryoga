@@ -63,6 +63,15 @@ def structured_data(stem, url, html):
 
 
 shutil.copytree(ROOT / 'public', DIST, dirs_exist_ok=True)
+# Browsers keep stylesheets and scripts for a week (the host's default), so a fix would not show for visitors who had
+# already loaded the site. Adding the version to their addresses makes every release fetch fresh copies.
+ASSET_VERSION = re.search(r'^\| (\d+\.\d+\.\d+) \|', (ROOT / 'CHANGELOG.md').read_text(), re.M).group(1)
+
+
+def versioned(html):
+    return re.sub(r'((?:href|src)=")(/assets/(?:css|js)/[^"?]+)"', lambda m: f'{m.group(1)}{m.group(2)}?v={ASSET_VERSION}"', html)
+
+
 partials = {name.upper(): (ROOT / 'src' / 'partials' / f'{name}.html').read_text() for name in ('head', 'header', 'footer')}
 pages = []  # (url, title, description) of every public page
 for page in sorted((ROOT / 'src' / 'pages').glob('[!_]*.html'), key=lambda page: (page.stem != 'home', page.stem)):  # _draft.html pages are not built
@@ -70,6 +79,7 @@ for page in sorted((ROOT / 'src' / 'pages').glob('[!_]*.html'), key=lambda page:
     html = page.read_text()
     for name, value in partials.items():
         html = html.replace('{{' + name + '}}', value)
+    html = versioned(html)
     html = html.replace('{{SITE_URL}}', escape(SITE_URL, quote=True)).replace('    {{ROBOTS}}\n', '' if INDEXABLE else '    <meta content="noindex" name="robots" />\n')
     if page.stem == '404':  # served by .htaccess for any missing URL; not in the sitemap
         (DIST / '404.html').write_text(html)

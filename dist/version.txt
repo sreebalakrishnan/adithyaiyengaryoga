@@ -1,15 +1,12 @@
 Adithya Institute of Iyengar Yoga: website
-Version 1.4.9, released 2026-10-24
+Version 1.4.10, released 2026-10-24
 Built for https://adithyaiyengaryoga.sreeb.dev (staging, not indexed by search engines)
 
-What changed in 1.4.9:
+What changed in 1.4.10:
 
-Tag `v1.4.9`. From Yogen.
-
-### Added
-- **A third picture of Guruji in the home page banner:** the black-and-white tribute with "My Ending should be your beginning", his signature and his dates (14 December 1918 to 20 August 2014). It is from the Google Maps listing and carries the logo of BKS Iyengar Yogashala, Malaysia, who are credited in its caption. The banner's buttons now say "Picture 1 of 3" and so on.
+Tag `v1.4.10`. From Yogen's report that the third banner picture still looked cut off on his phone.
 
 ### Fixed
-- **Every banner picture was cut off at the bottom.** The pictures grew taller than their frame, so the bottom tenth of Guruji's portrait and of the pen drawing was clipped, and would have hidden the tribute's dates and logo. They now fit the frame exactly, and the caption has room for two lines.
+- **Visitors kept seeing old styles for up to a week.** The host lets browsers keep stylesheets and scripts for seven days, and their addresses never changed, so anyone who had already loaded the site missed the 1.4.9 banner fix. `build.py` now adds the version to those addresses (`refinements.css?v=1.4.10`), so each release is fetched fresh. Release notes for 1.4.9 stay below.
 
 Every version: https://github.com/sreebalakrishnan/adithyaiyengaryoga/blob/main/CHANGELOG.md
