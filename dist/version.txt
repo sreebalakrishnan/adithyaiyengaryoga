@@ -1,12 +1,13 @@
 Adithya Institute of Iyengar Yoga: website
-Version 1.4.3, released 2026-10-24
+Version 1.4.4, released 2026-10-24
 Built for https://adithyaiyengaryoga.sreeb.dev (staging, not indexed by search engines)
 
-What changed in 1.4.3:
+What changed in 1.4.4:
 
-Tag `v1.4.3`. From Yogen.
+Tag `v1.4.4`. From Yogen.
 
 ### Changed
-- **Languages.** Narayan Sir speaks Kannada, Tamil, Telugu, English and Hindi, and his students are multilingual, so the sentence on the home and Narayan Sir pages no longer says only Kannada and Tamil. It now says language is not a barrier and that his presence teaches. The facts file (`src/site.json`), which feeds search and AI summaries, lists all five languages.
+- **The Youth entry is removed from Ways to practise**, and "youth" from that page's share text. Narayan Sir's youngest student is 25, so there is no youth class. The remaining entries are renumbered 1 to 6.
+- **Students' ages are stated on the Narayan Sir page:** "His students range in age from 25 to over 75."
 
 Every version: https://github.com/sreebalakrishnan/adithyaiyengaryoga/blob/main/CHANGELOG.md
