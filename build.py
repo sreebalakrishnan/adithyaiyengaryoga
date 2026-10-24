@@ -92,4 +92,12 @@ address = SITE['address']
     f"- Phone: {SITE['telephone']}. Email: {SITE['email']}",
     f"- Also known as: {', '.join(SITE['alternateName'])}.",
     '', '## Pages', ''] + [f'- [{title}]({url}): {description}' for url, title, description in pages]) + '\n')
-print(f'Built {len(pages)} pages in {DIST} for {SITE_URL}' + ('' if INDEXABLE else ' (staging: not indexed)'))
+changelog = (ROOT / 'CHANGELOG.md').read_text()
+version, released = re.search(r'^\| (\d+\.\d+\.\d+) \| (\S+) \|', changelog, re.M).groups()  # the newest row of the version table
+notes = re.search(r'^## ' + re.escape(version) + r' .*?\n(.*?)(?=^## |\Z)', changelog, re.M | re.S)
+(DIST / 'version.txt').write_text('\n'.join([  # what this build contains; no timestamp, so rebuilding unchanged sources changes nothing
+    f"{SITE['name']}: website", f'Version {version}, released {released}',
+    f'Built for {SITE_URL}' + ('' if INDEXABLE else ' (staging, not indexed by search engines)'), '',
+    f'What changed in {version}:', '', notes.group(1).strip() if notes else '(no notes in CHANGELOG.md)', '',
+    'Every version: https://github.com/sreebalakrishnan/adithyaiyengaryoga/blob/main/CHANGELOG.md']) + '\n')
+print(f'Built {len(pages)} pages, version {version}, in {DIST} for {SITE_URL}' + ('' if INDEXABLE else ' (staging: not indexed)'))

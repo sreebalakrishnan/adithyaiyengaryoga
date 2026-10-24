@@ -1,0 +1,12 @@
+Adithya Institute of Iyengar Yoga: website
+Version 1.4.0, released 2026-10-24
+Built for https://adithyaiyengaryoga.sreeb.dev (staging, not indexed by search engines)
+
+What changed in 1.4.0:
+
+Tag `v1.4.0`.
+
+### Added
+- **A version page at `/version.txt`** that shows the version, its release date and its notes from this changelog, so anyone can check what the live site contains: https://adithyaiyengaryoga.sreeb.dev/version.txt. `build.py` writes it from the newest row of the version table above. It has no timestamp, so rebuilding unchanged sources still changes nothing. `CLAUDE.md` explains how to check what is live, including the server's deploy log.
+
+Every version: https://github.com/sreebalakrishnan/adithyaiyengaryoga/blob/main/CHANGELOG.md
