@@ -20,6 +20,7 @@ body {
   background: var(--paper);
 }
 .site-nav a[aria-current="page"] {
+  border-bottom: 0;
   text-decoration: underline;
   text-underline-offset: 6px;
 }

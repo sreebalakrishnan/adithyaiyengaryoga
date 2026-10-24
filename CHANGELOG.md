@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.3.0 | 2026-10-23 | **Staging:** https://adithyaiyengaryoga.sreeb.dev — deploys itself from `main`, not indexed |
+| 1.3.1 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.3.0 | 2026-10-23 | Tag `v1.3.0`; **was staging:** https://adithyaiyengaryoga.sreeb.dev — deploys itself from `main`, not indexed |
 | 1.2.1 | 2026-10-23 | Tag `v1.2.1` |
 | 1.2.0 | 2026-10-23 | Tag `v1.2.0` |
 | 1.1.0 | 2026-10-23 | Tag `v1.1.0` |
@@ -21,6 +22,13 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.3.1 — 2026-10-24
+
+Tag `v1.3.1`.
+
+### Fixed
+- **Two lines under the current page in the navigation.** The original stylesheet drew a rope-coloured border under the active link and `refinements.css` added an underline as well. The border is removed; the underline stays.
 
 ## 1.3.0 — 2026-10-23
 
