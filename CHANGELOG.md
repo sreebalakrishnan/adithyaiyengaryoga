@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.4.8 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.9 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.8 | 2026-10-24 | Tag `v1.4.8` |
 | 1.4.7 | 2026-10-24 | Tag `v1.4.7` |
 | 1.4.6 | 2026-10-24 | Tag `v1.4.6` |
 | 1.4.5 | 2026-10-24 | Tag `v1.4.5` |
@@ -32,6 +33,16 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.4.9 — 2026-10-24
+
+Tag `v1.4.9`. From Yogen.
+
+### Added
+- **A third picture of Guruji in the home page banner:** the black-and-white tribute with "My Ending should be your beginning", his signature and his dates (14 December 1918 to 20 August 2014). It is from the Google Maps listing and carries the logo of BKS Iyengar Yogashala, Malaysia, who are credited in its caption. The banner's buttons now say "Picture 1 of 3" and so on.
+
+### Fixed
+- **Every banner picture was cut off at the bottom.** The pictures grew taller than their frame, so the bottom tenth of Guruji's portrait and of the pen drawing was clipped, and would have hidden the tribute's dates and logo. They now fit the frame exactly, and the caption has room for two lines.
 
 ## 1.4.8 — 2026-10-24
 

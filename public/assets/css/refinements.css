@@ -224,3 +224,19 @@ section[aria-labelledby="visit"] h2 {
 .principles-lead + .principles {
   margin-top: 1.25rem;
 }
+
+/* The banner pictures must fit their 4:3 frame. Without a zero minimum height the grid let each
+   picture grow taller than the frame, which clipped the bottom of every one of them. */
+.stack {
+  grid-template-rows: minmax(0, 1fr);
+}
+.slide {
+  min-height: 0;
+  grid-template-rows: minmax(0, 1fr);
+}
+.slide img {
+  min-height: 0;
+}
+.caption {
+  min-height: 3em;
+}
