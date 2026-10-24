@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.4.5 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.6 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.5 | 2026-10-24 | Tag `v1.4.5` |
 | 1.4.4 | 2026-10-24 | Tag `v1.4.4` |
 | 1.4.3 | 2026-10-24 | Tag `v1.4.3` |
 | 1.4.2 | 2026-10-24 | Tag `v1.4.2` |
@@ -29,6 +30,13 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.4.6 — 2026-10-24
+
+Tag `v1.4.6`. From Yogen.
+
+### Added
+- **Who comes to Narayan Sir, on his page:** some people come with serious long-standing conditions, among them arthritis and Parkinson's disease, and some when surgery has been advised, often after other approaches have not helped. It is worded as who comes, not as a promise of results, and sits next to the line that the practice works alongside medical care and does not replace it. The page makes no cure claim.
 
 ## 1.4.5 — 2026-10-24
 
