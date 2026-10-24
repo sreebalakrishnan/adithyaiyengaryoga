@@ -6,7 +6,7 @@ People: **Yogen** (Yogendra) is Narayan Sir's student and owns this project; the
 
 ## Purpose
 
-Not sales. The site shares the fundamental principles of Narayan Sir's practice, why and how it works, and the wisdom passed down from his guru, so visitors become curious and come to learn in person. He speaks Kannada and Tamil and is not comfortable expressing his teaching in English; students grasp the essence by practising with him over months, and the site should give a taste of that.
+Not sales. The site shares the fundamental principles of Narayan Sir's practice, why and how it works, and the wisdom passed down from his guru, so visitors become curious and come to learn in person. He speaks Kannada, Tamil, Telugu, English and Hindi, and his students are multilingual, so language is not a barrier: his presence teaches, and students grasp the essence by practising with him over months. The site should give a taste of that. (Do not say he is uncomfortable in English; interviews are still best recorded in Kannada or Tamil, where he speaks most freely.)
 
 The practice as he teaches it: works from the inside out, on the internal organs more than outer appearance; brings breath and mind together with intensity but without strain; works below conscious effort; lets energy reach every part of the body; over the long term guides the body back to its natural, healthy state. Respectful of other approaches (gyms, other yoga), which have their own value.
 
@@ -14,6 +14,7 @@ The practice as he teaches it: works from the inside out, on the internal organs
 
 - Timeline, as Yogen gave it: began learning from Sri B. Raghavendra Shenoy in **1987**; began teaching in **1989** at the Rashtrothana Parishad; started the Vijayanagar studio in **2002**. **Not 1988**: an earlier brief said "taught in Vijayanagar since 1988" and that was wrong. Say "teaching since 1989, and in Vijayanagar since 2002". Address: #37/4/24, Prashanth Nagar, I Main Road (Thimmenahalli), Vijayanagar, Bengaluru 560040. Map: https://maps.app.goo.gl/G2W5rmQw3kvCNjBH7
 - Classes: Monday to Friday, mornings 6–10 am, evenings 4–8 pm.
+- Languages (Yogen): he speaks Kannada, Tamil, Telugu, English and Hindi; students are multilingual and language is not a barrier.
 - Email adityaiyoga@gmail.com (the real address; never "correct" its spelling). Phone +91 98456 15277, which matches his entry in the Pune institute's teacher directory.
 - Spelling is **Adithya**. "Aditya" appears only in the email address and as a recorded alternate name for search.
 - He learnt directly from Guruji for **decades** (no specific years known). Do not invent years.

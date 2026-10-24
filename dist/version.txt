@@ -1,12 +1,12 @@
 Adithya Institute of Iyengar Yoga: website
-Version 1.4.2, released 2026-10-24
+Version 1.4.3, released 2026-10-24
 Built for https://adithyaiyengaryoga.sreeb.dev (staging, not indexed by search engines)
 
-What changed in 1.4.2:
+What changed in 1.4.3:
 
-Tag `v1.4.2`.
+Tag `v1.4.3`. From Yogen.
 
 ### Changed
-- **The lineage list on the home page matches the Narayan Sir timeline:** 1987 (begins learning from Sri B. Raghavendra Shenoy), Decades (continues to study under Guruji), 1989 (begins teaching at the Rashtrothana Parishad) and 2002 (starts the Vijayanagar studio). It had a single "Since 1989" line.
+- **Languages.** Narayan Sir speaks Kannada, Tamil, Telugu, English and Hindi, and his students are multilingual, so the sentence on the home and Narayan Sir pages no longer says only Kannada and Tamil. It now says language is not a barrier and that his presence teaches. The facts file (`src/site.json`), which feeds search and AI summaries, lists all five languages.
 
 Every version: https://github.com/sreebalakrishnan/adithyaiyengaryoga/blob/main/CHANGELOG.md

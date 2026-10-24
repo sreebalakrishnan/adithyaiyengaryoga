@@ -21,8 +21,8 @@
   "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
   "teacher": {
     "name": "Narayan Sir",
-    "description": "A direct student of B.K.S. Iyengar, teaching Iyengar yoga since 1989, and in Vijayanagar, Bengaluru since 2002. He teaches in Kannada and Tamil.",
-    "knowsLanguage": ["kn", "ta"],
+    "description": "A direct student of B.K.S. Iyengar, teaching Iyengar yoga since 1989, and in Vijayanagar, Bengaluru since 2002. He speaks Kannada, Tamil, Telugu, English and Hindi.",
+    "knowsLanguage": ["kn", "ta", "te", "en", "hi"],
     "image": "/_astro/narayan-sir-headshot.Ww1T-jEP_Zr8uIp.webp"
   }
 }
