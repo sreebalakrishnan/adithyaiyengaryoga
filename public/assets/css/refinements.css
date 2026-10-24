@@ -212,3 +212,15 @@ section[aria-labelledby="visit"] h2 {
     grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   }
 }
+
+/* The three principles belong to "This practice: inside out", not to both diagrams above them. */
+.principles-lead {
+  margin: 3.5rem 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rope);
+  font: 600 0.95rem var(--sans);
+  color: var(--ink);
+}
+.principles-lead + .principles {
+  margin-top: 1.25rem;
+}

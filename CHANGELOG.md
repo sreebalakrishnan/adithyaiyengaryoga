@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.3.1 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.3.2 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.3.1 | 2026-10-24 | Tag `v1.3.1` |
 | 1.3.0 | 2026-10-23 | Tag `v1.3.0`; **was staging:** https://adithyaiyengaryoga.sreeb.dev — deploys itself from `main`, not indexed |
 | 1.2.1 | 2026-10-23 | Tag `v1.2.1` |
 | 1.2.0 | 2026-10-23 | Tag `v1.2.0` |
@@ -22,6 +23,16 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.3.2 — 2026-10-24
+
+Tag `v1.3.2`.
+
+### Changed
+- **The three principles on the home page now say what they belong to.** "Breath and mind together", "The inner body first" and "Measured in years" sat below both diagrams and read as if they described both. They now sit under the heading "What the inside-out practice rests on".
+
+### Fixed
+- **A grey tooltip appeared over the diagrams** ("Layers of the body, from the surface to the centre"). It came from a `<title>` element inside each diagram. The five diagrams (home, practice, Roots) now carry the same text as an `aria-label`, so screen readers still announce them, and the two diagrams on each page are labelled "Outside in" and "Inside out".
 
 ## 1.3.1 — 2026-10-24
 
