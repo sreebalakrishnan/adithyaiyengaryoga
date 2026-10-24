@@ -6,7 +6,7 @@ People: **Yogen** (Yogendra) is Narayan Sir's student and owns this project; the
 
 ## Purpose
 
-Not sales. The site shares the fundamental principles of Narayan Sir's practice, why and how it works, and the wisdom passed down from his guru, so visitors become curious and come to learn in person. He speaks Kannada, Tamil, Telugu, English and Hindi, and his students are multilingual, so language is not a barrier: his presence teaches, and students grasp the essence by practising with him over months. The site should give a taste of that. (Do not say he is uncomfortable in English; interviews are still best recorded in Kannada or Tamil, where he speaks most freely.)
+Not sales. The site shares the fundamental principles of Narayan Sir's practice, why and how it works, and the wisdom passed down from his guru, so visitors become curious and come to learn in person. He speaks Kannada, Tamil, Telugu, English and Hindi, and his students are multilingual, so language is not a barrier: his presence teaches, and students grasp the essence by practising with him over months. The site should give a taste of that. (Do not say he is uncomfortable in English. Yogen talks with him in English, and interviews can be in English, Kannada or Tamil, whichever lets him speak most freely.)
 
 The practice as he teaches it: works from the inside out, on the internal organs more than outer appearance; brings breath and mind together with intensity but without strain; works below conscious effort; lets energy reach every part of the body; over the long term guides the body back to its natural, healthy state. Respectful of other approaches (gyms, other yoga), which have their own value.
 
@@ -60,7 +60,7 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist   # preview at htt
 
 ## Still to come from Yogen and Narayan Sir (see `editorial-backlog.json`)
 
-Recorded conversations in Kannada or Tamil, translated for meaning and shaped into teachings; student stories (Yogen's own first); which ways to practise he teaches and in which batches; what to wear and eat before a first class; fees and batch details. Missing content stays out of public pages until it is real.
+Recorded conversations in English, Kannada or Tamil (translated for meaning where needed) and shaped into teachings; student stories (Yogen's own first); which ways to practise he teaches and in which batches; what to wear and eat before a first class; fees and batch details. Missing content stays out of public pages until it is real.
 
 ## Working with Yogen
 
