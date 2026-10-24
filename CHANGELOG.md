@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.4.1 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.2 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.1 | 2026-10-24 | Tag `v1.4.1` |
 | 1.4.0 | 2026-10-24 | Tag `v1.4.0` |
 | 1.3.2 | 2026-10-24 | Tag `v1.3.2` |
 | 1.3.1 | 2026-10-24 | Tag `v1.3.1` |
@@ -25,6 +26,13 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.4.2 — 2026-10-24
+
+Tag `v1.4.2`.
+
+### Changed
+- **The lineage list on the home page matches the Narayan Sir timeline:** 1987 (begins learning from Sri B. Raghavendra Shenoy), Decades (continues to study under Guruji), 1989 (begins teaching at the Rashtrothana Parishad) and 2002 (starts the Vijayanagar studio). It had a single "Since 1989" line.
 
 ## 1.4.1 — 2026-10-24
 

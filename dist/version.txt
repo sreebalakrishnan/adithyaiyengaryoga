@@ -1,13 +1,12 @@
 Adithya Institute of Iyengar Yoga: website
-Version 1.4.1, released 2026-10-24
+Version 1.4.2, released 2026-10-24
 Built for https://adithyaiyengaryoga.sreeb.dev (staging, not indexed by search engines)
 
-What changed in 1.4.1:
+What changed in 1.4.2:
 
-Tag `v1.4.1`. Corrects when Narayan Sir began teaching, from Yogen.
+Tag `v1.4.2`.
 
 ### Changed
-- **"Teaching in Vijayanagar since 1988" is replaced everywhere** with the dates Yogen gave: he began learning from Sri B. Raghavendra Shenoy in 1987, began teaching in 1989 at the Rashtrothana Parishad, and started the Vijayanagar studio in 2002. The site now says "teaching since 1989, and in Vijayanagar since 2002". This covers the home page (line above the heading, share text, the lineage list and the Narayan Sir section), the Narayan Sir page (opening line, share text, "Teaching since 1989" section), the years scale on the practice page, the footer, and `src/site.json`, whose `foundingDate` is now 2002. That file feeds the structured data and `llms.txt`.
-- **The Narayan Sir timeline** has three new entries (1987, 1989 and 2002), loses the 1988 entry, and the "Decades" line now reads "He continues to study under Guruji."
+- **The lineage list on the home page matches the Narayan Sir timeline:** 1987 (begins learning from Sri B. Raghavendra Shenoy), Decades (continues to study under Guruji), 1989 (begins teaching at the Rashtrothana Parishad) and 2002 (starts the Vijayanagar studio). It had a single "Since 1989" line.
 
 Every version: https://github.com/sreebalakrishnan/adithyaiyengaryoga/blob/main/CHANGELOG.md
