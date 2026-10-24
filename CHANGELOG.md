@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.4.0 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.1 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.0 | 2026-10-24 | Tag `v1.4.0` |
 | 1.3.2 | 2026-10-24 | Tag `v1.3.2` |
 | 1.3.1 | 2026-10-24 | Tag `v1.3.1` |
 | 1.3.0 | 2026-10-23 | Tag `v1.3.0`; **was staging:** https://adithyaiyengaryoga.sreeb.dev — deploys itself from `main`, not indexed |
@@ -24,6 +25,14 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.4.1 — 2026-10-24
+
+Tag `v1.4.1`. Corrects when Narayan Sir began teaching, from Yogen.
+
+### Changed
+- **"Teaching in Vijayanagar since 1988" is replaced everywhere** with the dates Yogen gave: he began learning from Sri B. Raghavendra Shenoy in 1987, began teaching in 1989 at the Rashtrothana Parishad, and started the Vijayanagar studio in 2002. The site now says "teaching since 1989, and in Vijayanagar since 2002". This covers the home page (line above the heading, share text, the lineage list and the Narayan Sir section), the Narayan Sir page (opening line, share text, "Teaching since 1989" section), the years scale on the practice page, the footer, and `src/site.json`, whose `foundingDate` is now 2002. That file feeds the structured data and `llms.txt`.
+- **The Narayan Sir timeline** has three new entries (1987, 1989 and 2002), loses the 1988 entry, and the "Decades" line now reads "He continues to study under Guruji."
 
 ## 1.4.0 — 2026-10-24
 
