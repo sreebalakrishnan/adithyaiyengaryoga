@@ -1,13 +1,13 @@
 Adithya Institute of Iyengar Yoga: website
-Version 1.4.4, released 2026-10-24
+Version 1.4.5, released 2026-10-24
 Built for https://adithyaiyengaryoga.sreeb.dev (staging, not indexed by search engines)
 
-What changed in 1.4.4:
+What changed in 1.4.5:
 
-Tag `v1.4.4`. From Yogen.
+Tag `v1.4.5`. From Yogen. Follows from the students' ages (25 to over 75).
 
 ### Changed
-- **The Youth entry is removed from Ways to practise**, and "youth" from that page's share text. Narayan Sir's youngest student is 25, so there is no youth class. The remaining entries are renumbered 1 to 6.
-- **Students' ages are stated on the Narayan Sir page:** "His students range in age from 25 to over 75."
+- **"Who can practise?" on the practice page** no longer says children can be introduced to yoga. It now says adults of any age, that Narayan Sir's students range from 25 to over 75, and that props adapt the practice to each person. This answer also feeds the page's structured data, so the search-result version changes with it.
+- **Women's health** now says "through the adult years and menopause" instead of "from adolescence to menopause".
 
 Every version: https://github.com/sreebalakrishnan/adithyaiyengaryoga/blob/main/CHANGELOG.md

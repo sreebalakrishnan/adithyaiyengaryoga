@@ -5,7 +5,8 @@ Each version is a Git tag on this repository; the commit hashes are the exact sn
 
 | Version | Date | Where it lives |
 |---|---|---|
-| 1.4.4 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.5 | 2026-10-24 | **Staging:** https://adithyaiyengaryoga.sreeb.dev, deploys itself from `main`, not indexed |
+| 1.4.4 | 2026-10-24 | Tag `v1.4.4` |
 | 1.4.3 | 2026-10-24 | Tag `v1.4.3` |
 | 1.4.2 | 2026-10-24 | Tag `v1.4.2` |
 | 1.4.1 | 2026-10-24 | Tag `v1.4.1` |
@@ -28,6 +29,14 @@ Taken from the UX review of 23 October 2026, in the order that matters most. Eac
 - A "no sweating, no holding the breath, no straining the face" section built on *sthira sukham asanam*, in Sanskrit, Kannada and English.
 - Visit page filled in with Narayan Sir: batches and class length, the fee policy, languages, how to reach the hall (metro, landmark, parking), what to wear and when to eat, and a WhatsApp link.
 - Nav trimmed to what a beginner needs; Roots and Glossary move to the footer.
+
+## 1.4.5 — 2026-10-24
+
+Tag `v1.4.5`. From Yogen. Follows from the students' ages (25 to over 75).
+
+### Changed
+- **"Who can practise?" on the practice page** no longer says children can be introduced to yoga. It now says adults of any age, that Narayan Sir's students range from 25 to over 75, and that props adapt the practice to each person. This answer also feeds the page's structured data, so the search-result version changes with it.
+- **Women's health** now says "through the adult years and menopause" instead of "from adolescence to menopause".
 
 ## 1.4.4 — 2026-10-24
 
